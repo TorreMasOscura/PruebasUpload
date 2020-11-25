@@ -10,10 +10,14 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <context-param>
-    <param-name>docFolder</param-name>
-<!--     <param-value>C:\Users\MORENORALEXT\Desktop\Fujitsu\</param-value>  -->
-    <param-value>192.168.0.130:2049\nfsshare\</param-value> 
+    <param-name>rutaSubida</param-name>
+    <param-value>C:\Users\MORENORALEXT\Desktop\Fujitsu\</param-value> 
+<!--     <param-value>192.168.0.130:2049\nfsshare\</param-value>  -->
 <!--     <param-value>192.168.0.130:111\mnt\shared\</param-value>  -->
+  </context-param>
+  <context-param>
+    <param-name>rutaBajada</param-name>
+    <param-value>C:\Users\MORENORALEXT\Desktop\Fujitsu\</param-value> 
   </context-param>
   <servlet>
     <servlet-name>downloadServlet</servlet-name>

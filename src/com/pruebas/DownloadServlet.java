@@ -48,7 +48,7 @@ public class DownloadServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		String docFolder = servletContext.getInitParameter("docFolder");
+		String docFolder = servletContext.getInitParameter("rutaBajada");
 		System.out.println("docFolder: " + docFolder);
 		System.out.println("downloadedFilePrefix: " + downloadedFilePrefix);
 		
