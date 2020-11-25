@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>servletdemo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>docFolder</param-name>
+<!--     <param-value>C:\Users\MORENORALEXT\Desktop\Fujitsu\</param-value>  -->
+    <param-value>192.168.0.130:2049\nfsshare\</param-value> 
+<!--     <param-value>192.168.0.130:111\mnt\shared\</param-value>  -->
+  </context-param>
+  <servlet>
+    <servlet-name>downloadServlet</servlet-name>
+    <servlet-class>com.pruebas.DownloadServlet</servlet-class>
+    <init-param>
+      <param-name>downloadedFilePrefix</param-name>
+      <param-value>DOWNLOADED_</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>downloadServlet</servlet-name>
+    <url-pattern>/download</url-pattern>
+  </servlet-mapping>
+
+<!--   <filter> -->
+<!--     <filter-name>loginFilter</filter-name> -->
+<!--     <filter-class>com.pruebas.LoginFilter</filter-class> -->
+<!--   </filter> -->
+<!--   <filter-mapping> -->
+<!--     <filter-name>loginFilter</filter-name> -->
+<!--     <url-pattern>/main/inputForm.jsp</url-pattern> -->
+<!--   </filter-mapping> -->
+</web-app>
